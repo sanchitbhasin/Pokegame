@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+  
+.Pokecard-column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+  
+.Pokecard-row {margin: 0 -5px;}
+  
+.Pokecard-row:after {
+    display: table;
+    clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+    .Pokecard-column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+}
+  
+.Pokecard-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    margin: 10px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.Pokecard img:hover {
+    transform: scale(1.25);
+    opacity: 0.7;
+}
+
+.Pokecard img {
+    transition: all ease 500ms;
+}
